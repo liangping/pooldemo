@@ -4,7 +4,13 @@ interface Coin {
     denom: string
 }
 
+enum PoolSide {
+    Native,
+    Remote,
+}
+
 interface PoolAsset {
+    side: PoolSide
     balance: Coin
     weight: number
 }
@@ -21,14 +27,20 @@ interface IBCSwapBase {
     price(denomIn: string, denomOut: string): number
     deposit(amount: Coin[]) : number
     withdraw(poolToken: Coin, denomOut: string): Coin
-    exactTokenInForTokenOut(tokenIn: Coin, denomOut: String, exact: boolean): Coin
-    tokenInForExactTokenOut(denomIn: string, tokenOut: Coin, exact: boolean): Coin
+    leftSwap(tokenIn: Coin, denomOut: String, exact: boolean): Coin
+    rightSwap(denomIn: string, tokenOut: Coin, exact: boolean): Coin
+    // estimatedSlippage(tokenIn: Coin, tokenOut: Coin): number 
 }
 
 // convert "50:50" to [0.5, 0.5]
 export function parseWeightString(weight: string) {
     const w = weight.split(":").map(x => Number(x)/100)
     return w // need make sure sum is 1
+}
+
+export function isLocalNativeToken(denom: string) : PoolSide {
+    // TODO: check if coin is native token 
+    return denom.length < 5 ? PoolSide.Native: PoolSide.Remote
 }
 
 /// Inspired by Balancer: IBCSwap use invariant: V = π Bt ** Wt
@@ -50,6 +62,7 @@ export default class IBCSwapV1 implements IBCSwapBase {
         }
         this.assets = coins.map((x, i) => {
             return {
+                side: isLocalNativeToken(x),
                 balance: {
                     amount: 0,
                     denom: x
@@ -85,7 +98,7 @@ export default class IBCSwapV1 implements IBCSwapBase {
     // At = Bt * (1 - (1 - P_redeemed / P_supply) ** 1/Wt)
     withdraw(toRedeem: Coin, denomOut: string): Coin {
         if(toRedeem.denom !== this.poolToken.denom) 
-            throw new Error("Method not implemented.")
+            throw new Error("Your pool assets are not accepted.")
 
         const redeem = this.findAssetByDenom(denomOut)
         const At = redeem.balance.amount * (1 - (1 - toRedeem.amount/this.poolToken.amount) ** (1/redeem.weight))
@@ -96,8 +109,9 @@ export default class IBCSwapV1 implements IBCSwapBase {
     }
 
     // OutGivenIn
+    // Input how many coins you want to sell, output an amount you will receive
     // Ao = Bo * ((1 - Bi / (Bi + Ai)) ** Wi/Wo)
-    exactTokenInForTokenOut(Ai: Coin, denomOut: string, exact: boolean): Coin {
+    leftSwap(Ai: Coin, denomOut: string, exact: boolean): Coin {
        const Bi = this.findAssetByDenom(Ai.denom)
        const Bo = this.findAssetByDenom(denomOut)
        const Ao = Bo.balance.amount * (1 - (Bi.balance.amount / (Bi.balance.amount + Ai.amount)) ** (Bi.weight/Bo.weight))
@@ -108,8 +122,9 @@ export default class IBCSwapV1 implements IBCSwapBase {
     }
 
     // InGivenOut
+    // Input how many coins you want to buy, output an amount you need to pay
     // Ai = Bi * ((Bo/(Bo - Ao)) ** Wo/Wi -1)
-    tokenInForExactTokenOut(denomIn: string, Ao: Coin, exact: boolean): Coin {
+    rightSwap(denomIn: string, Ao: Coin, exact: boolean): Coin {
         const Bi = this.findAssetByDenom(denomIn)
         const Bo = this.findAssetByDenom(Ao.denom)
         const Ai = Bi.balance.amount * ((Bo.balance.amount/(Bo.balance.amount - Ao.amount)) ** (Bo.weight/Bi.weight))
@@ -125,11 +140,11 @@ export default class IBCSwapV1 implements IBCSwapBase {
         throw new Error("Token not found in the pool")
     }
 
+    // P_issued = P_supply * ((1 + At/Bt) ** Wt -1)
     private depositSingleAsset(token: Coin) : number {
         const Bt = this.findAssetByDenom(token.denom)
         Bt.balance.amount += token.amount * (1 - this.feeRate) // update pool states
 
-        // P_issued = P_supply * ((1 + At/Bt) ** Wt -1)
         const issue = this.poolToken.amount * ((1 + token.amount/Bt.balance.amount) ** Bt.weight -1 )
         return issue
     }
@@ -145,17 +160,95 @@ export default class IBCSwapV1 implements IBCSwapBase {
    
 } 
 
+///////////////////
+//  Relayer Msg  //
+///////////////////
+enum MessageType {
+    Create,
+    Deposit,
+    Withdraw,
+    LeftSwap,
+    RightSwap,
+}
 
-interface IBCSwapDelegator {
-    delegateCreate(assets: PoolAsset[])
-    delegateDeposit(amount: Coin[]) : number
-    delegateWithdraw(poolAssets: PoolAsset): Coin[]
-    delegateTokenInForExactTokenOut(tokenIn: Coin, exact: boolean): Coin
-    delegateExactTokenInForTokenOut(tokenIn: Coin, exact: boolean): Coin
+// IBCSwapDataPacket is used to wrap message for relayer.
+interface IBCSwapDataPacket {
+    msgType: MessageType,
+    data: Uint8Array, // Bytes
+}
 
-    onCreate(assets: PoolAsset[])
-    onDeposit(amount: Coin[]) : number
-    onWithdraw(poolAssets: PoolAsset): Coin[]
-    onTokenInForExactTokenOut(tokenIn: Coin, exact: boolean): Coin
-    onExactTokenInForTokenOut(tokenIn: Coin, exact: boolean): Coin
+interface IBCSwapAcknowledgeDataPacket {
+    msgType: MessageType,
+    data: Uint8Array, // Bytes
+}
+
+
+/////////////////////
+// cosmos messages //
+/////////////////////
+
+interface MsgCreatePool {
+    sender: string,
+    denoms: string[],
+    weight: string[],
+}
+
+interface MsgDeposit {
+    sender: string,
+    tokens: Coin[],
+}
+
+interface MsgWithdraw {
+    sender: string,
+    poolCoin: Coin,
+    denomOut: string, // optional, if not set, withdraw native coin to sender.
+}
+
+interface MsgLeftSwap {
+    sender: string,
+    amountIn: Coin,
+    denomOut: string,
+    slippage: number; // max tolerated slippage 
+}
+
+interface MsgRightSwap {
+    sender: string,
+    denomIn: string,
+    amountOut: Coin,
+    slippage: number; // max tolerated slippage 
+}
+
+
+export class IBCSwapDelegator {
+    delegateCreate(msg: MsgCreatePool) {
+
+    }
+    delegateDeposit(msg: MsgDeposit) {
+
+    }
+    delegateWithdraw(msg: MsgWithdraw) {
+
+    }
+    delegateLeftSwap(msg: MsgLeftSwap) {
+
+    }
+    delegateRightSwap(msg: MsgRightSwap) {
+
+    }
+
+    onCreate(msg: MsgCreatePool) {
+
+    }
+    onDeposit(msg: MsgDeposit) {
+
+    }
+    onWithdraw(msg: MsgWithdraw) {
+
+    }
+    onLeftSwap(msg: MsgLeftSwap) {
+
+    }
+    onRightSwap(msg: MsgRightSwap) {
+
+    }
 }
