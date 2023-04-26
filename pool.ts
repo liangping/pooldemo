@@ -121,6 +121,13 @@ export class WeightedPool implements LiquidityPool {
         this.y -= out
         return out
     }
+    swapY4X(y: number): number {
+        const amount = y * (1 - this.fee)
+        const out = this.x * (1 - (this.y / (this.y + amount)) ** (this.wy / this.wx) )
+        this.y += amount
+        this.x -= out
+        return out
+    }
     marketPrice(): number {
         return this.x/this.wx / (this.y/this.wy)
         // const Ai = 10

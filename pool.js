@@ -94,6 +94,13 @@ var WeightedPool = /** @class */ (function () {
         this.y -= out;
         return out;
     };
+    WeightedPool.prototype.swapY4X = function (y) {
+        var amount = y * (1 - this.fee);
+        var out = this.x * (1 - Math.pow((this.y / (this.y + amount)), (this.wy / this.wx)));
+        this.y += amount;
+        this.x -= out;
+        return out;
+    };
     WeightedPool.prototype.marketPrice = function () {
         return this.x / this.wx / (this.y / this.wy);
         // const Ai = 10

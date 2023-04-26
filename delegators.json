@@ -1,0 +1,612 @@
+[
+    {
+      "id": 292775659,
+      "delegator_address": "inj1xmdfy2cvjuynhf74lfna6qn3k2qfq7afjehd8h",
+      "amount": "237476267907695800000000"
+    },
+    {
+      "id": 292775966,
+      "delegator_address": "inj1cjkfqfymr6m8auykw8ta2pe0ppdagel59qt5kh",
+      "amount": "94990507163078320000000"
+    },
+    {
+      "id": 292776297,
+      "delegator_address": "inj149pxjtn2dq4z88lpu9mgmqh5du8dgy3n8e2uau",
+      "amount": "47495253581539160000000"
+    },
+    {
+      "id": 292776637,
+      "delegator_address": "inj13zl7c4ea60jt05hxhl2dp443r7zrlz4phsj30j",
+      "amount": "10402101446423210000000"
+    },
+    {
+      "id": 292777977,
+      "delegator_address": "inj16ujqtje2en9ns59hrcjfu2885epsrvus9czdw8ljtd45whxucs5srrejpa",
+      "amount": "2205394681699441800000"
+    },
+    {
+      "id": 292779728,
+      "delegator_address": "inj194dv897hcdz4tlsp04elwy5fmhl5gjh66utfqt",
+      "amount": "1179573119849673900000"
+    },
+    {
+      "id": 292780568,
+      "delegator_address": "inj197m0n2yxtfhz0uv4ehhddqrsjeg6xsp2rfxjwq",
+      "amount": "951801283403117600000"
+    },
+    {
+      "id": 292780573,
+      "delegator_address": "inj164v0wlj8athyjq7022lh88kqqcw67zvqwtyj2v",
+      "amount": "949905071630783200000"
+    },
+    {
+      "id": 292787210,
+      "delegator_address": "inj1wrg337mv9jkqjxktwzsvetq6lar3gyfj9rfw5f",
+      "amount": "228000017171702840000"
+    },
+    {
+      "id": 292791281,
+      "delegator_address": "inj1xaj052lm28zh583f59t52dz0yd97pdrvcxlec0",
+      "amount": "124375242475016880000"
+    },
+    {
+      "id": 292792650,
+      "delegator_address": "inj1j08dq4wczev84dtjdqpcj5esryn0k8l764lcf3",
+      "amount": "105460457001618050000"
+    },
+    {
+      "id": 292793125,
+      "delegator_address": "inj1ddwjz5rnyj7kqh72de8jwlcjuvtjxwpyhkkd3e",
+      "amount": "101463042678504420000"
+    },
+    {
+      "id": 292794468,
+      "delegator_address": "inj1f47ty25gsytu03c3h6pdksv53xn5u5q6jt3wwm",
+      "amount": "97840507368806990000"
+    },
+    {
+      "id": 292794722,
+      "delegator_address": "inj13n3zvusfwjfqgf30g8cz68jtddrrfdgr2jm6sd",
+      "amount": "94336506901156920000"
+    },
+    {
+      "id": 292794735,
+      "delegator_address": "inj19v46yz0x7ynwqvwhvzd4rtn2ylgga9mpvn470p",
+      "amount": "93309007027519390000"
+    },
+    {
+      "id": 292796394,
+      "delegator_address": "inj1peyj4hqcwzwt3wagtvydmsv0st9py4wqzq8ml3",
+      "amount": "55700646122946880000"
+    },
+    {
+      "id": 292797308,
+      "delegator_address": "inj1hfzxg03lyu35scr8m7pwxj4jwz7t55wccfzh6k",
+      "amount": "50401963100729350000"
+    },
+    {
+      "id": 292798404,
+      "delegator_address": "inj1za8gx4awzzww539txzytralzpu5uds7xwmdcpf",
+      "amount": "48070003620367350000"
+    },
+    {
+      "id": 292798800,
+      "delegator_address": "inj1vutxxc89k0yw20g35repuekckdqlxs92akxn5c",
+      "amount": "46228699737908540000"
+    },
+    {
+      "id": 292798804,
+      "delegator_address": "inj1g54af4ndvx4swc02yey4w6q0284x5fl783s635",
+      "amount": "46075003470114950000"
+    },
+    {
+      "id": 292799847,
+      "delegator_address": "inj16r5zu4753ekyd7ksqw4zy7q5xne827vghk355q",
+      "amount": "39899053005868210000"
+    },
+    {
+      "id": 292799850,
+      "delegator_address": "inj18wcu2r4x85xhlupr6n7h99m0ffux7n6kst6t6c",
+      "amount": "39787792376210240000"
+    },
+    {
+      "id": 292800020,
+      "delegator_address": "inj15yt3p4djkwwu2dudr2zhx68fvmg6zpzzse2xu3",
+      "amount": "38095002869105350000"
+    },
+    {
+      "id": 292800023,
+      "delegator_address": "inj1kzn23vwjasvmr9dhe0w8dkgmd5wxwlqj2v72mj",
+      "amount": "38000002861950480000"
+    },
+    {
+      "id": 292800142,
+      "delegator_address": "inj1ylj2umhx246zlmkag724kavvllcrygx8d9jcyw",
+      "amount": "37050002790401710000"
+    },
+    {
+      "id": 292803041,
+      "delegator_address": "inj13dcyvc9cgn52cy6skavmjazu9vzg2n7k2kpz25",
+      "amount": "27540502074198606000"
+    },
+    {
+      "id": 292803241,
+      "delegator_address": "inj1v3m5pealhmsalrtvcz3av6zxm3gh2qh2wlphq8",
+      "amount": "26247836977466438000"
+    },
+    {
+      "id": 292803443,
+      "delegator_address": "inj1ssfrz4ewgnp8lzwu7pdd0nsfe7r5v3ekzm3wzy",
+      "amount": "25669001933247545000"
+    },
+    {
+      "id": 292804084,
+      "delegator_address": "inj14at7xqlff0r3kxayv8cu0guupdsfrv7xvwcghz",
+      "amount": "24309012172710953000"
+    },
+    {
+      "id": 292804158,
+      "delegator_address": "inj1j2d9w57yr6hd9z8eg67tle9f2jkng9uhwtplma",
+      "amount": "23750001788719047000"
+    },
+    {
+      "id": 292805501,
+      "delegator_address": "inj14k0j8y2mmlj92kt72f6zrt33xf405w03vfymkq",
+      "amount": "19000001430975240000"
+    },
+    {
+      "id": 292805512,
+      "delegator_address": "inj1qvc4r4p95lkltsufq74y9v5lymhmdl44rewkws",
+      "amount": "18998101432615660000"
+    },
+    {
+      "id": 292805551,
+      "delegator_address": "inj1ug9470y3f620uc68e3aedrekdv248zgkph66w7",
+      "amount": "18734001410941583000"
+    },
+    {
+      "id": 292805558,
+      "delegator_address": "inj1q9mr5hyqpv0pp8qk4u69e8e886cr2kylusv45l",
+      "amount": "18523148896800272000"
+    },
+    {
+      "id": 292805882,
+      "delegator_address": "inj1t93fzh5x6t6erydcswq5pda7vsquugzd92xdgp",
+      "amount": "17520218526526198000"
+    },
+    {
+      "id": 292806091,
+      "delegator_address": "inj1zz2lupdjk9vm3zfkjwaxww36q5jfa90ea84pnm",
+      "amount": "16466145210886695000"
+    },
+    {
+      "id": 292806750,
+      "delegator_address": "inj1kyz8h933ut23lpv82ewvjrqzdpfz6mxe5ty5v3",
+      "amount": "14250001073231428000"
+    },
+    {
+      "id": 292806752,
+      "delegator_address": "inj1xj0t6kh4uul2t7u89xp63qhhhqvvklzfyq8szn",
+      "amount": "14248576074461747000"
+    },
+    {
+      "id": 292808316,
+      "delegator_address": "inj106y42hq5vfhzcag5l8vs0c97rqgplqsl5mce7z",
+      "amount": "10131552431757441000"
+    },
+    {
+      "id": 292809479,
+      "delegator_address": "inj18ghs0yfpzrf8qy8e0f2nnpqjhwxc2kh2zngr7q",
+      "amount": "9860039343506205000"
+    },
+    {
+      "id": 292809543,
+      "delegator_address": "inj1x4anrtara4h29dfg9hvpsp9wxffsjw3wjxtpcf",
+      "amount": "9500000715487620000"
+    },
+    {
+      "id": 292809886,
+      "delegator_address": "inj1z7rjy2qfwgf7vml7u9v5ntly47577hcmzgvcq3",
+      "amount": "9025000679713238000"
+    },
+    {
+      "id": 292810063,
+      "delegator_address": "inj1fjssecqtq7gnsqr5mk8xgw5mdjptcvjdp5suc4",
+      "amount": "8843645666857165000"
+    },
+    {
+      "id": 292810967,
+      "delegator_address": "inj1ac7zd82jtf62v379npza9n0h2d53jt6cfvyc5g",
+      "amount": "7599240573046265000"
+    },
+    {
+      "id": 292811672,
+      "delegator_address": "inj1s3rv2tr9fz5636wqayjwjsfaml3u97280m57qt",
+      "amount": "6316958976266788000"
+    },
+        {
+          "id": 292812240,
+          "delegator_address": "inj1uxcz589tpdgn4thfd60yfz23hxpz9jg4j7nq6y",
+          "amount": "5918500445748786000"
+        },
+        {
+          "id": 292812258,
+          "delegator_address": "inj1ktuvawacu9lfwm6rkeqrcmlxlm0yra4vpfptq4",
+          "amount": "5766443807383486000"
+        },
+        {
+          "id": 292813670,
+          "delegator_address": "inj1kx3y0jjw2n4vezn7kwn6lsm6zs55q5ruk8jr6m",
+          "amount": "4750000357743810000"
+        },
+        {
+          "id": 292813757,
+          "delegator_address": "inj19vwgfem0wc278wdl3hs5qvfqvpea0m6jmwgrq3",
+          "amount": "4370000329124304400"
+        },
+        {
+          "id": 292813948,
+          "delegator_address": "inj15qmjccwyuup8nf0trcd7c9vt4nch5j69z8umpz",
+          "amount": "4275000321969428500"
+        },
+        {
+          "id": 292814501,
+          "delegator_address": "inj1qtl4xlzw9x2a0nstuaj0afdelfwhst84wu2t7e",
+          "amount": "3800000286195047400"
+        },
+        {
+          "id": 292815352,
+          "delegator_address": "inj1ctpwah0knzq4c2yw2ylu0umdkurcu6ah4cgd4e",
+          "amount": "2425225338404586500"
+        },
+        {
+          "id": 292815416,
+          "delegator_address": "inj1vf7yl80c4nls67q0qf66p7x2259vplen54mkc9",
+          "amount": "2251500169570565600"
+        },
+        {
+          "id": 292815836,
+          "delegator_address": "inj1pjy3wukz3r4t2z4kzh6pe83q4kseqqrn7jzgg0",
+          "amount": "1954584671347234800"
+        },
+        {
+          "id": 292815902,
+          "delegator_address": "inj1pqr0m0hwzpcq4vvjnnfvs53v8h5jz5jmkv28n3",
+          "amount": "1900000143097523700"
+        },
+        {
+          "id": 292815903,
+          "delegator_address": "inj1s25kskn8gyvvy70cn6mxhqvey9hvprpq5ux4u3",
+          "amount": "1900000143097523700"
+        },
+        {
+          "id": 292815969,
+          "delegator_address": "inj1nuhk2t4sswryp86yx3jmp2unzqn0gg82y0g8vq",
+          "amount": "1744473271922278000"
+        },
+        {
+          "id": 292816300,
+          "delegator_address": "inj1fr22vtkmjcxuz6p04ltwqndtd92u7s7hffmxg0",
+          "amount": "1425000107323142700"
+        },
+        {
+          "id": 292816304,
+          "delegator_address": "inj13rgc9jwc3q7day42a7r2znhyvvvaauvlpuxwvh",
+          "amount": "1406000105892167400"
+        },
+        {
+          "id": 292816425,
+          "delegator_address": "inj125dnn83c3zjdw5vsggls4nlca5j38mndrt03wj",
+          "amount": "1235000093013390300"
+        },
+        {
+          "id": 292817931,
+          "delegator_address": "inj125j4jg5d5hs3xvgfn0me69kgdlv9xe9zp4ear3",
+          "amount": "950000071548761900"
+        },
+        {
+          "id": 292818178,
+          "delegator_address": "inj1y9arzdd4zh0lptmrgx09e49ys8va6sk35nd088",
+          "amount": "855000064393885700"
+        },
+        {
+          "id": 292818823,
+          "delegator_address": "inj1k039kwnsjlar4gv5wxry09n7ym2j8nx8uekd6v",
+          "amount": "256500019318165700"
+        },
+        {
+          "id": 292818840,
+          "delegator_address": "inj1r4f6js8me403sxmah9kzqxjx8edp2hec7avhhw",
+          "amount": "237476267907695780"
+        },
+        {
+          "id": 292818973,
+          "delegator_address": "inj16llgcx08zghvcnemhksmdzvnyy272v4gpnlrhx",
+          "amount": "199500015025240000"
+        },
+        {
+          "id": 292819318,
+          "delegator_address": "inj1csdhrqweppkttth2pl3zqyf2vgcxcr35dh4fgk",
+          "amount": "178986756854104600"
+        },
+        {
+          "id": 292820115,
+          "delegator_address": "inj1cdcd8q6wda2y08fy3f572qfmfv9c2p037507ty",
+          "amount": "76000005723900940"
+        },
+        {
+          "id": 292820420,
+          "delegator_address": "inj1a4yw4h2afrje53vq8s085y2s9g55ezvhd9l982",
+          "amount": "13534758049205322"
+        },
+        {
+          "id": 292821514,
+          "delegator_address": "inj1efl5733yvhpawl3rgswk5txt58wtteukzpwgfq",
+          "amount": "10000000000000000"
+        },
+        {
+          "id": 292822357,
+          "delegator_address": "inj1t7ery702dmx4jppu0k7pvhlrr7yhnagqkdnlqx",
+          "amount": "9499050716307830"
+        },
+        {
+          "id": 292823669,
+          "delegator_address": "inj1f7hzpuq52mewj67nlf9hwktv3cmkjfqaj5tph5",
+          "amount": "5700003996340002"
+        },
+        {
+          "id": 292823711,
+          "delegator_address": "inj1yjcddkk7xfz2hg7srs2q23u2hne02xww2szxvz",
+          "amount": "5225013324080693"
+        },
+        {
+          "id": 292824413,
+          "delegator_address": "inj1j6s5p0wgy3c2tst7dd92yytf7lntmc99wwx479",
+          "amount": "2663253730179440"
+        },
+        {
+          "id": 292827077,
+          "delegator_address": "inj1wtmtv8mjmwn82gh2em8k27krm78u32pxfy06gp",
+          "amount": "950000071548761"
+        },
+        {
+          "id": 292827078,
+          "delegator_address": "inj1q2qa699kn07rjujwtvxz2ruxktw0rzr2avtvm4",
+          "amount": "949905071630783"
+        },
+        {
+          "id": 292827079,
+          "delegator_address": "inj1rxmtmvw54sh6hdw605m56757fmpjyk2y4jnnr4",
+          "amount": "949905071630783"
+        },
+        {
+          "id": 292827080,
+          "delegator_address": "inj1yx6l8m560mf7yvdynq55zhl7t8q0gwqq6scpre",
+          "amount": "949905071630783"
+        },
+        {
+          "id": 292827081,
+          "delegator_address": "inj1xue22ermncvng67zlvc7pavse7lwt0aul7tv4h",
+          "amount": "949905071630783"
+        },
+        {
+          "id": 292827082,
+          "delegator_address": "inj1x7dy8l9ttvg5a5ty8ja9z7dxne8swprxhmkjky",
+          "amount": "949905071630783"
+        },
+        {
+          "id": 292827083,
+          "delegator_address": "inj1x7jarp78cnnme00afmcphuway2958cz6mz53u7",
+          "amount": "949905071630783"
+        },
+        {
+          "id": 292827084,
+          "delegator_address": "inj18vr5qu2f3k3vd8r2thpvpuam9us762ywmpgj9n",
+          "amount": "949905071630783"
+        },
+        {
+          "id": 292827085,
+          "delegator_address": "inj1dcyf5lk8epgd6s56jps7jzytzwukv4p6ts57tu",
+          "amount": "949905071630783"
+        },
+        {
+          "id": 292827086,
+          "delegator_address": "inj1sfhyerehtwvnta74qha2tqldyvneqkhazp9q4a",
+          "amount": "949905071630783"
+        },
+        {
+          "id": 292827177,
+          "delegator_address": "inj1l0xnjz92yhfnfj0naalakc3kkv7ffrdh33v56f",
+          "amount": "949905071630783"
+        },
+        {
+          "id": 292827601,
+          "delegator_address": "inj1q3w57gdu0qpenvdlfsv6m5fuzguanvh8ngc6tt",
+          "amount": "665000050084133"
+        },
+        {
+          "id": 292827759,
+          "delegator_address": "inj1jnhd5qyydpklxkaavdjzanzzvnltl5u5g4q2ac",
+          "amount": "277420431602126"
+        },
+        {
+          "id": 292828685,
+          "delegator_address": "inj1xkzce0e6exjn6jx8clu7c3fem0nsel9qwm8qe5",
+          "amount": "716379380376"
+        },
+        {
+          "id": 292828801,
+          "delegator_address": "inj1xkycqd00empnu3p90mg9k82lg20778mvf832f6",
+          "amount": "124846660098"
+        },
+        {
+          "id": 292829095,
+          "delegator_address": "inj19plw77x3646uqp6rcemjx5aph32ck3td54wmxl",
+          "amount": "1783523"
+        },
+        {
+          "id": 292829321,
+          "delegator_address": "inj1q9x6qa8uuqcgpe0welhpz607qx6ehqrfve4tz5",
+          "amount": "0"
+        },
+            {
+              "id": 292829416,
+              "delegator_address": "inj1qnsk2xrwzjfetxxuhcpyqvmx4y0srdtxehv5dy",
+              "amount": "0"
+            },
+            {
+              "id": 292829581,
+              "delegator_address": "inj1qcysata2luy7dmwa7njkwntej47c3ysk28ysqy",
+              "amount": "0"
+            },
+            {
+              "id": 292829591,
+              "delegator_address": "inj1q6nfpgrlvm873uc6vzduem9ncuenzvg6hu6qtg",
+              "amount": "0"
+            },
+            {
+              "id": 292829812,
+              "delegator_address": "inj1pg89s53nl8ka0gyehcldfg2pe9h978emsyenpk",
+              "amount": "0"
+            },
+            {
+              "id": 292830091,
+              "delegator_address": "inj1ptpnmjfsp5yuqvpccqvqtzqlnwa438vv7q3z40",
+              "amount": "0"
+            },
+            {
+              "id": 292830097,
+              "delegator_address": "inj1pvdayws633shnxl4s9hxw655dwcp8t83tesehf",
+              "amount": "0"
+            },
+            {
+              "id": 292830588,
+              "delegator_address": "inj1z2u3r239669wujglj30llqvm6xtt55rar3jwew",
+              "amount": "0"
+            },
+            {
+              "id": 292830882,
+              "delegator_address": "inj1r6elf7u6pywpknlx6pscj2ycd5d8p5eccfme0g",
+              "amount": "0"
+            },
+            {
+              "id": 292830890,
+              "delegator_address": "inj1ru9a3yq2gt0x8ztcfp9l36qh759dvx8jn54jsx",
+              "amount": "0"
+            },
+            {
+              "id": 292831996,
+              "delegator_address": "inj195h6m8japuwx8qzda5tmy9d8eyjyycqxcuwhxl",
+              "amount": "0"
+            },
+            {
+              "id": 292832871,
+              "delegator_address": "inj1gw8s9a5ajpu52h2s4yuaqw4hveh7mqr9xwxyag",
+              "amount": "0"
+            },
+            {
+              "id": 292832915,
+              "delegator_address": "inj1gjevnw8fw3da3g9cg3zwlwq7jcx77sda9v3h9d",
+              "amount": "0"
+            },
+            {
+              "id": 292832922,
+              "delegator_address": "inj1gh8nfmchz6fku075yr3ajfl0h4u2nvdmrtheam",
+              "amount": "0"
+            },
+            {
+              "id": 292833897,
+              "delegator_address": "inj12exths3p48jkvrw94e4knr3apqqutwpf2ctvk2",
+              "amount": "0"
+            },
+            {
+              "id": 292834202,
+              "delegator_address": "inj1t6l62qtg7z680xpmvg9t9a7fhctnnrl0axud6x",
+              "amount": "0"
+            },
+            {
+              "id": 292834761,
+              "delegator_address": "inj1w3dq9fv25k0dg3en63en6pkewljrq6a9lr9e7z",
+              "amount": "0"
+            },
+            {
+              "id": 292834798,
+              "delegator_address": "inj1094wqac3kcvevjavvh4pmyzh6d7l6r3papryny",
+              "amount": "0"
+            },
+            {
+              "id": 292835075,
+              "delegator_address": "inj1sfem88pzh8pjs4lwm7lfuf9agqnktuvz6vksfa",
+              "amount": "0"
+            },
+            {
+              "id": 292835205,
+              "delegator_address": "inj1s3e0c9qv5unrzdhz63lg4u4j0ww6dd3vph34xz",
+              "amount": "0"
+            },
+            {
+              "id": 292835363,
+              "delegator_address": "inj13tvf08ecvlzpew4x349qmlkqvutl2mql92gn9z",
+              "amount": "0"
+            },
+            {
+              "id": 292835384,
+              "delegator_address": "inj1309edx8q02vhc6hz4e43hkm65fd9ux6f6xr8vv",
+              "amount": "0"
+            },
+            {
+              "id": 292835893,
+              "delegator_address": "inj1jja9fkc2v0ekldqysnsy4zay3ejc4mx0ypwkm5",
+              "amount": "0"
+            },
+            {
+              "id": 292836975,
+              "delegator_address": "inj1kclq4eax47vdr3gjdmkclsu3quz8q0nx8hhsyy",
+              "amount": "0"
+            },
+            {
+              "id": 292837299,
+              "delegator_address": "inj1h0m5jrgcrc0xwrynudprzmt6mp2um6q24k6qmd",
+              "amount": "0"
+            },
+            {
+              "id": 292837342,
+              "delegator_address": "inj1c96kcsh5adrnx2utey0yyyc6vzr3v3232m52rt",
+              "amount": "0"
+            },
+            {
+              "id": 292837727,
+              "delegator_address": "inj1ekxkx6jlx46g67upc5gv756nk8yg9pphjsyudg",
+              "amount": "0"
+            },
+            {
+              "id": 292838309,
+              "delegator_address": "inj163kryllhp8cvdc23z5wa4w87qqeqgajtthajn4",
+              "amount": "0"
+            },
+            {
+              "id": 292838318,
+              "delegator_address": "inj16ks6639gmvztc47wuy4gryseeyfm4tntc2sqh2",
+              "amount": "0"
+            },
+            {
+              "id": 292838416,
+              "delegator_address": "inj1mvfyndh4gglua6lk6f0tetmr9wdghje8z4pqgw",
+              "amount": "0"
+            },
+            {
+              "id": 292838515,
+              "delegator_address": "inj1uzzsqf5xwlyedvjwfvmqwjzc0xyt36tflm8c5g",
+              "amount": "0"
+            },
+            {
+              "id": 292838908,
+              "delegator_address": "inj1ujath0v5d74gj0w82rurxqq4ekvqrmw8rxddyf",
+              "amount": "0"
+            },
+            {
+              "id": 292839224,
+              "delegator_address": "inj1a3u2r7r2lypnvp6shawsnadujf5c0hwm8nw7jx",
+              "amount": "0"
+            }
+          ]

@@ -187,68 +187,74 @@ interface IBCSwapAcknowledgeDataPacket {
 // cosmos messages //
 /////////////////////
 
-interface MsgCreatePool {
+interface MsgCreatePoolRequest {
     sender: string,
     denoms: string[],
-    weight: string[],
+    decimals: [],
+    weight: string,
 }
 
-interface MsgDeposit {
+interface MsgDepositRequest {
     sender: string,
     tokens: Coin[],
 }
 
-interface MsgWithdraw {
+interface MsgWithdrawRequest {
     sender: string,
     poolCoin: Coin,
     denomOut: string, // optional, if not set, withdraw native coin to sender.
 }
 
-interface MsgLeftSwap {
+interface MsgLeftSwapRequest {
     sender: string,
-    amountIn: Coin,
+    tokenIn: Coin,
     denomOut: string,
-    slippage: number; // max tolerated slippage 
+    slippage: number; // max tolerated slippage
+    recipient: string, 
 }
 
-interface MsgRightSwap {
+interface MsgRightSwapRequest {
     sender: string,
     denomIn: string,
-    amountOut: Coin,
+    tokenOut: Coin,
     slippage: number; // max tolerated slippage 
+    recipient: string,
 }
 
 
 export class IBCSwapDelegator {
-    delegateCreate(msg: MsgCreatePool) {
+    delegateCreate(msg: MsgCreatePoolRequest) {
 
     }
-    delegateDeposit(msg: MsgDeposit) {
+    delegateDeposit(msg: MsgDepositRequest) {
 
     }
-    delegateWithdraw(msg: MsgWithdraw) {
+    delegateWithdraw(msg: MsgWithdrawRequest) {
 
     }
-    delegateLeftSwap(msg: MsgLeftSwap) {
+    delegateLeftSwap(msg: MsgLeftSwapRequest) {
 
     }
-    delegateRightSwap(msg: MsgRightSwap) {
+    delegateRightSwap(msg: MsgRightSwapRequest) {
 
     }
 
-    onCreate(msg: MsgCreatePool) {
+}
+
+export class IBCSwapListener {
+    onCreateReceived(msg: MsgCreatePoolRequest)  {
 
     }
-    onDeposit(msg: MsgDeposit) {
+    onDepositReceived(msg: MsgDepositRequest) {
 
     }
-    onWithdraw(msg: MsgWithdraw) {
+    onWithdrawReceived(msg: MsgWithdrawRequest) {
 
     }
-    onLeftSwap(msg: MsgLeftSwap) {
+    onLeftSwapReceived(msg: MsgLeftSwapRequest) {
 
     }
-    onRightSwap(msg: MsgRightSwap) {
+    onRightSwapReceived(msg: MsgRightSwapRequest) {
 
     }
 }
